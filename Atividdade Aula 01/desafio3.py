@@ -2,7 +2,7 @@
 
 # Crie um algoritmo que leia um número e mostre o seu dobro, triplo e o seu quadrado.
 
-numero1 = float(input("Entre com o um número inteiro: "))
+numero1 = float(input("Entre com o um número: "))
 
 dobro = numero1 * 2
 triplo = numero1 * 3
