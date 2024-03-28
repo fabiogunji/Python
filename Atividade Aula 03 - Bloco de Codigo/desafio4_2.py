@@ -11,17 +11,17 @@ try:
     def validaMaior(numero1, numero2, numero3):
         if (numero1 > numero2) and (numero1 > numero3): 
             print(f"Para os números inseridos {numero1}, {numero2} e {numero3} o maior é {numero1}")
-        elif (numero2 > numero1) and (numero2 > numero3):             
+        elif (numero2 > numero3):             
             print(f"Para os números inseridos {numero1}, {numero2} e {numero3} o maior é {numero2}")                
-        elif (numero3 > numero1) and (numero3 > numero2):             
+        elif (numero3 > numero1):
                 print(f"Para os números inseridos {numero1}, {numero2} e {numero3} o maior é {numero3}")                
                 
     def validaMenor(numero1, numero2, numero3):
         if (numero1 < numero2) and (numero1 < numero3): 
             print(f"Para os números inseridos {numero1}, {numero2} e {numero3} o maior é {numero1}")
-        elif (numero2 < numero1) and (numero2 < numero3):             
+        elif (numero2 < numero3):             
             print(f"Para os números inseridos {numero1}, {numero2} e {numero3} o maior é {numero2}")                
-        elif (numero3 < numero1) and (numero3 < numero2):             
+        elif (numero3 < numero1):             
                 print(f"Para os números inseridos {numero1}, {numero2} e {numero3} o maior é {numero3}")              
 
     validaMaior(numero1, numero2, numero3)
