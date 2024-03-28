@@ -26,5 +26,6 @@ try:
 
     validaMaior(numero1, numero2, numero3)
     validaMenor(numero1, numero2, numero3)
+    
 except:
     print("Entre com valores válidos")
