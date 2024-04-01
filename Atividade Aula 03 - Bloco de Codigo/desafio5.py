@@ -16,7 +16,6 @@ ab = reta1 + reta2
 ac = reta1 + reta3
 bc = reta2 + reta3
 
-
 if (ab > reta3) and (ac > reta2) and (bc > reta1):
     print(f"É um triangulo. {reta1}, {reta2} e {reta3}")
 else:
