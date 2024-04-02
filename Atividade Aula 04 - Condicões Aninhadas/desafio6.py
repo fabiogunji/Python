@@ -7,6 +7,7 @@ import random
 
 dicionario = {0:"Pedra", 1:"Papel", 2:"Tesoura"}
 
+print(type(dicionario))
 acertou = False
 
 try:
