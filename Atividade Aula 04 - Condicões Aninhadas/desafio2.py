@@ -20,4 +20,4 @@ if(v1 > v2):
 elif(v2 > v1):
     print(f"Segundo valor {v2} maior que o primeiro valor {v1}.")
 else:
-    print(f"Valores iguais {v1} e {v2}.")
+    print(f"Não existe maior, os dois valores são iguais {v1} e {v2}.")
