@@ -1,10 +1,11 @@
 from random import randint
 
-aleatorio = randint(0,5)
+
 pontuaMaquina = 0
 pontuaUsuario = 0
 
 for elemento in range (1,11):
+    aleatorio = randint(0,5)
     numero = int(input(f"{elemento}º rodada Digiten um número: "))
     
     if aleatorio == numero:
