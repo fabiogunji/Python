@@ -5,7 +5,7 @@
 
 total = 0
 for n in range (1,7):   
-    numero = int(input("Digite o sexto número inteiro: "))
+    numero = int(input(f"Digite o {n}º número inteiro: "))
     if numero % 2 == 0:
         total = total + numero 
 else:
