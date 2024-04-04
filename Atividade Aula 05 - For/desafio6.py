@@ -4,8 +4,9 @@
 razao = int(input("Informe a razao da progressao aritimetica: "))
 inicioPa = int(input("Informe o número inicial da progressao aritimetica: "))
 
-qtdTermo = int(input("Informe a de termos da progressao aritimetica: "))
 # como calcular o último termo (10)
+qtdTermo = int(input("Informe a de termos da progressao aritimetica: "))
+# ou
 #qtdTermo = (inicioPa + (10 - 1 ) * razao) + razao
 
 # print("Fabio", end="-")
