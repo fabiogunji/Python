@@ -14,6 +14,7 @@ vlrMaior100 = 0.0
 prdMaiort100 = 100.0 
 vlrCompra = 0.0
 lstdMaisBarato = []
+prdMaisbarato = " "
 
 def validaPreco(vlr1, vlr2,nome,preco):
     if (vlr1 < vlr2): 
@@ -52,4 +53,4 @@ while True:
         
 print(f"#### A) Qual é o total gasto na compra: {vlrCompra}. ####")
 print(f"#### B) Quantos produtos custam mais de R$ 100,00: {vlrMaior100}. ####")
-print(f"#### C) Qual é o nome do produto mais barato: {qtdMulherMenor20}. ####")
+print(f"#### C) Qual é o nome do produto mais barato: {prdMaisbarato}. ####")
