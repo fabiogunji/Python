@@ -42,10 +42,7 @@ while True:
                 numeroMenor = jogador
             else:
                 numeroMaior = validaMaior(jogador, numeroMaior)
-                numeroMenor = validaMenor(jogador, numeroMenor)            
-        else:
-            
-            print("nok")
+                numeroMenor = validaMenor(jogador, numeroMenor)                    
             
         continuar = input("Deseja continuar? [S/N]: ").upper()
         
@@ -60,9 +57,9 @@ while True:
         continue
 
 
-print(f" A média entre todos os valores é: {media:.2f}")
-print(f"Numero maior {numeroMaior}")
-print(f"Numero menor {numeroMenor}")
+print(f"A média entre todos os valores é: {media:.2f}")
+print(f"Numero maior digitado foi: {numeroMaior}")
+print(f"Numero menor digitado foi: {numeroMenor}")
 
 #print(f"contador: {contador}")    
 #print(f"soma: {soma}")
