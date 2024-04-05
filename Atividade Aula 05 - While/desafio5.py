@@ -1,14 +1,46 @@
+# DESAFIO 05
 
+# Crie um programa que leia a idade e o sexo de varias pessoas. 
+# A cada pessoa cadastrada, o programa deverá perguntar se o usuário quer ou não continuar. 
 
-from random import randint
+# No final, mostre:
+    # A) Quantas pessoas tem mais de 18 anos.
+    # B) Quantos homens foram cadastrados.
+    # C) Quantas mulheres tem menos de 20 anos.
 
-escolhaComputador = 0
+qtdPessoas = qtdMaior18 = qtdHomens = qtdMulherMenor20 = 0    
 
-while True:
-    computador = randint(0,10)   
+while True:    
+    idade = int(input("Digite a sua idade: "))
+    sexo = input("Digite o seu sexo: [M/F]: ").upper()
     
-    if computador % 2  != 0:
-        escolhaComputador = computador
+    continuar = input("Deseja continuar? [S/N]: ").upper()
+    
+    if continuar == "S":
+        qtdPessoas += 1        
+        
+        if sexo == "M":
+            qtdHomens += 1            
+            if idade > 18:
+                qtdMaior18 += 1
+        else:
+            if idade > 18:
+                qtdMaior18 += 1
+            
+            if idade < 20:
+                qtdMulherMenor20 += 1
+            
+            
+        continue
+    elif continuar == "N":    
+        if idade > 18:
+            qtdMaior18 += 1   
+            
         break
-    
-print(escolhaComputador)
+    else:
+        print("Favor entrar con S ou N.")
+        
+print(f"#### A) Quantas pessoas tem mais de 18 anos: {qtdMaior18}. ####")
+print(f"#### B) Quantos homens foram cadastrados: {qtdHomens}. ####")
+print(f"#### C) Quantas mulheres tem menos de 20 anos: {qtdMulherMenor20}. ####")
+
