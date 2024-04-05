@@ -4,10 +4,7 @@
 # No final da execução, mostre a média entre todos os valores e qual foi o maior e o menor valores lidos. 
 # O programa deve perguntar ao usuário se ele quer ou não continuar a digitar valores
 
-contador = 0
-soma = 0
-numeroMaior = 0
-numeroMenor = 0
+contador = soma = numeroMaior = numeroMenor = 0
 media = 0.0
 
 def validaMaior(numero1, numero2):
@@ -48,9 +45,11 @@ while True:
         
         if continuar == "S":
             continue
-        else:
+        elif continuar == "N":
             media = calculaMedia(soma,contador)
             break
+        else:
+            print("Favor entrar con S ou N.")        
         
     except:
         print("Favor entrar con um número inteiro.")
@@ -61,8 +60,6 @@ print(f"A média entre todos os valores é: {media:.2f}")
 print(f"Numero maior digitado foi: {numeroMaior}")
 print(f"Numero menor digitado foi: {numeroMenor}")
 
-#print(f"contador: {contador}")    
-#print(f"soma: {soma}")
 
 
 
