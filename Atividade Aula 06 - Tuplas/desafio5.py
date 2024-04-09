@@ -7,6 +7,8 @@
 from tabulate import tabulate
 
 produtos = [["Bala","0.30"],["suco","4.10"],["Sorvete","32.30"],["Paçoca","1.5"],["M&M","11.30"],["Milka","18.30"]]
+
+#print(tuple(produtos))
             
 print(tabulate(produtos, headers=["Produto", "Preço"]))
 
