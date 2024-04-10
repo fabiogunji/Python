@@ -34,13 +34,22 @@ while True:
         continue
     elif continuar == "N":    
         if idade > 18:
-            qtdMaior18 += 1   
+            qtdMaior18 += 1
+        
+        if sexo == "M":
+            qtdHomens += 1                    
+        else:
+            if idade > 18:
+                qtdMaior18 += 1
+            
+            if idade < 20:
+                qtdMulherMenor20 += 1   
             
         break
     else:
         print("Favor entrar con S ou N.")
         
-print(f"#### A) Quantas pessoas tem mais de 18 anos: {qtdMaior18}. ####")
-print(f"#### B) Quantos homens foram cadastrados: {qtdHomens}. ####")
-print(f"#### C) Quantas mulheres tem menos de 20 anos: {qtdMulherMenor20}. ####")
+print(f"#### A) Quantas pessoas tem mais de 18 anos: {qtdMaior18}.")
+print(f"#### B) Quantos homens foram cadastrados: {qtdHomens}.")
+print(f"#### C) Quantas mulheres tem menos de 20 anos: {qtdMulherMenor20}.")
 
