@@ -4,7 +4,7 @@
 
 # Seu programa deverá ler um número pelo teclado (entre 0 e 20) e mostra-lo por extenso.
 
-numerosExtenso = ("Zero","Hum", "Dois", "Três", "Quatro", "Cinco", "Seis", "Sete", "Oito", "Nove", "Dez", "Onze", "Doze", "treze", "Quatrorze","Quinze","Dezeseis", "Dezesete","Dezoito", "Dezenove", "Vinte")
+numerosExtenso = ("Zero","Hum", "Dois", "Três", "Quatro", "Cinco", "Seis", "Sete", "Oito", "Nove", "Dez", "Onze", "Doze", "treze", "Quatrorze","Quinze","Dezeseis", "Dezessete","Dezoito", "Dezenove", "Vinte")
 
 numero = int(input("Entre com um número inteiro entre 0 e 20: "))
 

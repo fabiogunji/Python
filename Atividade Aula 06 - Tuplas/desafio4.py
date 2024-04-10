@@ -7,8 +7,9 @@
 # C) Quais foram o números pares.
 
 tpNumeros = []
-contador = contador9 = 0
+contador = contador9 = posicao3 = 0 
 valPares = []
+
 
 for contador in range(1,5):
     valores = int(input("Entre com um número inteiro: "))
@@ -16,15 +17,25 @@ for contador in range(1,5):
     contador += 1 
     
     if valores % 2 == 0:
-        valPares.append(valores)
-        
-    
+        valPares.append(valores)      
 
-print(tpNumeros)
+tpnum = tuple(tpNumeros)
 
-contador9 = tpNumeros.count("9")
-posicao3 = tpNumeros.index(3)
+print(tpnum)
+
+contador9 = tpnum.count(9)
+
+if 3 in tpnum:    
+    posicao3 = tpnum.index(3)
+else:
+    print(">>> O número 3 não consta na lista")   
+
+'''
+#Segunda Maneira
+numeros = (int(input('Digite um número: ')),int(input('Digite um número: ')),int(input('Digite um número: ')),\
+            int(input('Digite um número: ')),int(input('Digite um número: ')))
+''' 
 
 print(f"A) Quantas vezes apareceu o valor 9: {contador9}")
 print(f"# B) Em que posição foi digitado o primeiro valor 3: Posição {posicao3}")
-print(f"# C) Quais foram o números pares: {valPares}")
+print(f"# C) Quais foram o números pares: {tuple(valPares)}")

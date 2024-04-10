@@ -25,7 +25,18 @@ for contador in range(1,6):
         if numero < numeroMenor:
             numeroMenor = numero
     
-    contador += 1    
+    contador += 1   
+
+'''
+# Outra forma
+
+for contador in range(1,6):    
+    tpNumeros.append(random.randint(0,5))
+
+numeroMaior = max(tpNumeros)    
+numeroMenor = min(tpNumeros)
+
+''' 
 
 print(f"Segue a lista de números inteiros aleatórios: {tuple(tpNumeros)}")
 print(f"O maior número da lista é {numeroMaior}")
