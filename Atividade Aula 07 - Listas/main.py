@@ -1,7 +1,8 @@
 
+print(f"{'-':^22}")
 
-lista = [4,5,3,5]
-print(enumerate(lista))
+# lista = [4,5,3,5]
+#print(enumerate(lista))
 #print(lista.pop())
 
 
