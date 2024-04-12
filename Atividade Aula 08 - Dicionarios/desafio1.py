@@ -10,8 +10,9 @@ dcAluno["nome"] = input("Digite seu nome: ")
 dcAluno["media"] = float(input("Entre com sua média: "))
 
 if(dcAluno["media"] >= notaCorte):    
-    dcAluno["Situacao"] = "Aprovado"
+    dcAluno["situacao"] = "Aprovado"
 else:    
-    dcAluno["Situacao"] = "Reprovado"   
+    dcAluno["situacao"] = "Reprovado"   
 
-print(dcAluno)
+for nome, situacao in dcAluno.items():
+    print(f"Nome do aluno: {nome} e situação: {situacao}")
