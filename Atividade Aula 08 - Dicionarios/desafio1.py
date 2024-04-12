@@ -6,16 +6,12 @@
 dcAluno = {}
 notaCorte = 7.0
 
-nome = input("Digite seu nome: ")
-media = float(input("Entre com sua média: "))
+dcAluno["nome"] = input("Digite seu nome: ")
+dcAluno["media"] = float(input("Entre com sua média: "))
 
-if(media >= notaCorte):
-    dcAluno["Nome"] = nome
-    dcAluno["Media"] = media
+if(dcAluno["media"] >= notaCorte):    
     dcAluno["Situacao"] = "Aprovado"
-else:
-    dcAluno["Nome"] = nome
-    dcAluno["Media"] = media
+else:    
     dcAluno["Situacao"] = "Reprovado"
    
 
