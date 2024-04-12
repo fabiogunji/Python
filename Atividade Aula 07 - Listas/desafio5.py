@@ -23,13 +23,20 @@ while True:
         continue
     else:
         break
+  
+tamLista = len(lstNomePeso)
+        
+for i in range(1, tamLista):
     
-tpPessoas = tuple(lstNomePeso)
+            
+    
+
+
    
 
 # print(len(lstNomePeso))
 
 print(f"A) Quantas pessoas foram cadastradas é {len(lstNomePeso)}.")
-print(f"B) Uma listagem com as pessoas mais pesadas {sorted(tpPessoas)}")
+print(f"B) Uma listagem com as pessoas mais pesadas {tpPessoas[1][1]}")
 print(f"C) Um listagem com as pessoas mais leves")
 
