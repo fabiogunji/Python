@@ -12,7 +12,6 @@ dcAluno["media"] = float(input("Entre com sua média: "))
 if(dcAluno["media"] >= notaCorte):    
     dcAluno["Situacao"] = "Aprovado"
 else:    
-    dcAluno["Situacao"] = "Reprovado"
-   
+    dcAluno["Situacao"] = "Reprovado"   
 
 print(dcAluno)
