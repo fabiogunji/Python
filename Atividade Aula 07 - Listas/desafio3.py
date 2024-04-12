@@ -9,7 +9,6 @@
 lstValores = []
 lstValoresBkp = []
 lstOrdenada = []   
-
   
 for i in range(5):
     lstValores.append(int(input(f"Entre com o {i}º número inteiro: ")))
