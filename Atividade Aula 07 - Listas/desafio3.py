@@ -7,34 +7,21 @@
 
 
 lstValores = []
+lstValoresBkp = []
+lstOrdenada = []   
+
   
-  
-for i in range(5):
-    valores = int(input(f"Entre com o {i}º número inteiro: "))
-    
-    lstOrdenada = []   
-  
-    for chave, valor in enumerate(lstOrdenada):
-        print(f" chave {chave} e {valor}")        
-  
-'''
 for i in range(5):
     lstValores.append(int(input(f"Entre com o {i}º número inteiro: ")))
+    
+lstValoresBkp.extend(lstValores)
 
-#print(lstValores)
+for j in range(5):
+    vlrMenor = min(lstValores)
+    lstOrdenada.insert(j,vlrMenor)
+    lstValores.remove(vlrMenor)    
 
-for numero in lstValores:
-
-    for chave, valor in enumerate(lstValores):
-        print(f" chave {chave} e {valor}")        
-        
-        if numero < valor:
-            lstOrdenada.insert(chave,numero)
-        else:
-            lstOrdenada.append(numero)
-
-print(lstOrdenada)
-'''          
+print(f"A lista original é {lstValoresBkp} e a lista final é ficou {lstOrdenada}") 
    
 
 # Resolução Pedro
