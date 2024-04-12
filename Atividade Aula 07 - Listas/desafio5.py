@@ -26,7 +26,7 @@ while True:
   
 tamLista = len(lstNomePeso)
         
-for i in range(1, tamLista):
+#for i in range(1, tamLista):
     
             
     
