@@ -2,7 +2,7 @@ import socket
 
 cliente = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
-cliente.connect("localhost",8080)
+cliente.connect(("localhost",8080))
 
 print("Digite SAIR para terminar o chat.")
 
