@@ -11,9 +11,9 @@ while True:
     
     msg = cliente.recv(1024).decode("UTF-8")
     
-    if msg == "SAIR":
+    if msg == "SAIR":        
         break
     else:
         print(msg)
         
-cliente.close
+cliente.close()
