@@ -6,8 +6,9 @@
 # B) Uma listagem com as pessoas mais pesadas.
 # C) Um listagem com as pessoas mais leves
 
+from operator import itemgetter
+
 lstNomePeso = []
-tpPessoas = ()
 contador = 1
 
 while True:    
@@ -19,24 +20,10 @@ while True:
     
     contador += 1
   
-    if input("Deseja continuar? [S/N]: ").upper() == "S":
-        continue
-    else:
+    if input("Deseja continuar? [S/N]: ").upper() == "N":
         break
-  
-tamLista = len(lstNomePeso)
-        
-#for i in range(1, tamLista):
-    
-            
-    
-
-
-   
-
-# print(len(lstNomePeso))
-
-print(f"A) Quantas pessoas foram cadastradas é {len(lstNomePeso)}.")
-print(f"B) Uma listagem com as pessoas mais pesadas {tpPessoas[1][1]}")
-print(f"C) Um listagem com as pessoas mais leves")
+ 
+print(f"A) Quantas pessoas foram cadastradas: {len(lstNomePeso)}.")
+print(f"B) Uma listagem com as pessoas mais pesadas: {sorted(dict(lstNomePeso).items(), key=itemgetter(1),reverse=True)}")
+print(f"C) Um listagem com as pessoas mais leves: {sorted(dict(lstNomePeso).items(), key=itemgetter(1))}")
 

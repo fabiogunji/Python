@@ -2,7 +2,10 @@ import socket
 
 cliente = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
-cliente.connect(("localhost",8080))
+servidor = input("Informe o servidor: ")
+porta = int(input("Infome a porta: "))
+
+cliente.connect((servidor,porta))
 
 print("Digite SAIR para terminar o chat.")
 
@@ -11,9 +14,9 @@ while True:
     
     msg = cliente.recv(1024).decode("UTF-8")
     
-    if msg == "SAIR":        
+    if msg == "SAIR":                     
         break
     else:
         print(msg)
-        
-cliente.close()
+
+cliente.close()     
