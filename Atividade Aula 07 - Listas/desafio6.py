@@ -6,14 +6,25 @@
 # No final mostre os valores pares e impares e ordem crescente.
 
 lstNumeros = []
+lstPares = []
+lstImpares = []
+contador = 0
 
-for i in range(1,8):    
-    valor = int(input(f"Entre com o {i}º valor numérico: "))
-    
-    if valor % 2 == 0:           
-        lstNumeros.append(valor)
+for i in range(0,7):    
+    valor = int(input(f"Entre com um valor numérico: "))  
+    if valor % 2 != 0:                  
+        lstNumeros.insert(contador,valor)
+        contador += 1 
     else:
-        lstNumeros = lstNumeros + [valor]
+       lstNumeros.insert(len(lstNumeros)+1,valor)    
 
+for n in lstNumeros:
+    if n % 2 != 0:
+        lstImpares.append(n)
+    else:
+        lstPares.append(n)
+        
 
-print(lstNumeros)
+print(f"Lista de números separados por par e impar: {lstNumeros}")
+print(f"Lista impar em ordem crescente: {sorted(lstImpares)} ")
+print(f"Lista par em ordem crescente: {sorted(lstPares)} ")
