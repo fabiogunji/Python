@@ -8,10 +8,10 @@
 lstNumeros = []
 
 for i in range(1,8):    
-    valor = int(input(f"Entre com o {i}º vamlor numérico: "))
+    valor = int(input(f"Entre com o {i}º valor numérico: "))
     
     if valor % 2 == 0:           
-        lstNumeros.insert(i,valor)
+        lstNumeros.append(valor)
     else:
         lstNumeros = lstNumeros + [valor]
 
