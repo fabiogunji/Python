@@ -1,8 +1,4 @@
-import sys
-sys.path.insert(0, 'C:\Users\Aluno\Documents\GitHub\Python\Util\funcoesGunji.py')
+from ..Util.funcoesGunji import validaMaior, validaMenor
 
-import funcoesGunji.py
-
-print(validaMaior(3, 2))
-
-
+print(validaMaior(5,3))
+print(validaMenor(5,3))

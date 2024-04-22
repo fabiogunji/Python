@@ -1,15 +1,16 @@
+
 def validaMaior(numero1, numero2):
     if (numero1 > numero2): 
-        numeroMaior = numero1        
+        return numero1        
     else:             
-        numeroMaior = numero2
-    return numeroMaior
+        return numero2
+  
         
                 
 def validaMenor(numero1, numero2):
     if (numero1 < numero2): 
-        numeroMenor = numero1        
+        return numero1        
     else:             
-        numeroMenor = numero2 
+        return numero2 
     
-    return numeroMenor
+ 
