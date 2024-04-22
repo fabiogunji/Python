@@ -8,4 +8,4 @@ def area(largura, comprimento):
     return area
 
 
-print(area(52,2))
+print(area(50,20))

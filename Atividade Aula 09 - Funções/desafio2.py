@@ -9,9 +9,9 @@
 # Olá, mundo
 # -----------------------------------
 
-def escreva(texto):
-    print("-" * 50)
+def escreva(texto):    
+    print("-" * len(texto))
     print(texto)
-    print("-" * 50)
+    print("-" * len(texto))
         
 escreva("Tinha que ser o Chaves")
