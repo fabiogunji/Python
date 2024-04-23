@@ -5,6 +5,8 @@
 try:
     with open("dados.txt", "r") as arquivo:
         print(arquivo.read())
-except:
+        
+except FileNotFoundError:
     print("Arquivo não encontrado")
+
     

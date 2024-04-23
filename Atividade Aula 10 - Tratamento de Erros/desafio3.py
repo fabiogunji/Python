@@ -4,9 +4,11 @@
 # Lide com o erro caso o número seja negativo.
 import math
 
+calculaRaiz = lambda n1:math.sqrt(n1) 
+
 try:
     n1 = int(input("Entre com um número inteiro: "))
-    print(math.sqrt(n1))
+    print(calculaRaiz(n1))
     
-except:
+except ValueError:
     print("Favor inserir um número inteiro válido")
