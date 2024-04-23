@@ -5,10 +5,12 @@
 # Lide com o erro caso a idade digitada não seja um número.
 
 try:
+    exibeTexto = lambda nome,idade: print(f"Seu nome é {nome} e sua idade {idade}")
+
     nome = input("Digite seu nome: ")
     idade = int(input("Digite sua idade: "))
     
-    print(f"Seu nome é {nome} e sua idade {idade}")
+    exibeTexto(nome, idade)
     
 except ValueError:
     print("Favor inserir dados válidos")
