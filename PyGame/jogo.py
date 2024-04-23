@@ -19,6 +19,10 @@ pos_y_circulo = 40
 pos_x_circulo = 20
 raio_circulo = 20
 
+# Definindo fonte
+fonte = pygame.font.SysFont("arial", 20, True,False)
+pontos = 0
+
 #movimentaRetangulo = lambda
 
 # Criando a janela do game
@@ -35,6 +39,10 @@ while True:
     
     # limpar a tela para sempre mostrar a última posição do retangulo
     tela.fill((0,0,0))
+    
+    mensagem = f"Pontos: {pontos}"
+    textoFormatado = fonte.render(mensagem,True,(255,255,255))
+    
     
     # Colocando os eventos no pygame
     for event in pygame.event.get():
@@ -71,6 +79,9 @@ while True:
     if retangulo .colliderect(circulo):
         pos_x_circulo = randint(40, 600)
         pos_y_circulo = randint(50, 430) 
+        pontos += 1
+        
+    tela.blit(textoFormatado,(400,40))
                    
         
     # Atualizar o jogo em toda a interação
