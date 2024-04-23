@@ -1,6 +1,7 @@
 import pygame
 from pygame.locals import *
 from sys import exit
+from random import *
 
 pygame.init()
 
@@ -16,7 +17,7 @@ altura_retangulo = 40
 # Definindo posição e tamanho do circulo
 pos_y_circulo = 40
 pos_x_circulo = 20
-raio_circulo = 10
+raio_circulo = 20
 
 #movimentaRetangulo = lambda
 
@@ -61,11 +62,17 @@ while True:
     elif pygame.key.get_pressed()[K_RIGHT]:
         pos_x_retangulo += 10
         
+        
+    retangulo = pygame.draw.rect(tela, (0,0,255), (pos_x_retangulo,pos_y_retangulo,largura_retangulo, altura_retangulo))
     
-    pygame.draw.rect(tela, (0,0,255), (pos_x_retangulo,pos_y_retangulo,largura_retangulo, altura_retangulo))
-    
-    pygame.draw.circle(tela, (255,0,255), (pos_x_circulo,pos_y_circulo),raio_circulo)
+    circulo = pygame.draw.circle(tela, (255,0,255), (pos_x_circulo,pos_y_circulo),raio_circulo)
 
+    # Movimenta o circulo quando o quadrado acertar nele
+    if retangulo .colliderect(circulo):
+        pos_x_circulo = randint(40, 600)
+        pos_y_circulo = randint(50, 430) 
+                   
+        
     # Atualizar o jogo em toda a interação
     pygame.display.update()
     
