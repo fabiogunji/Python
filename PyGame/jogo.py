@@ -41,7 +41,7 @@ while True:
         if event.type == QUIT:
             pygame.quit()
             exit()
-            
+                        
         # if event.type == KEYDOWN:
         #     if event.key == K_UP:
         #         pos_y_retangulo -= 10
