@@ -81,7 +81,7 @@ while True:
         pos_y_circulo = randint(50, 430) 
         pontos += 1
         
-    tela.blit(textoFormatado,(400,40))
+    tela.blit(textoFormatado,(400,40))    
                    
         
     # Atualizar o jogo em toda a interação
