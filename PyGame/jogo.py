@@ -18,6 +18,7 @@ pos_y_circulo = 40
 pos_x_circulo = 20
 raio_circulo = 10
 
+#movimentaRetangulo = lambda
 
 # Criando a janela do game
 tela = pygame.display.set_mode((largura,altura))
@@ -25,7 +26,13 @@ tela = pygame.display.set_mode((largura,altura))
 # definir o titulo da janela
 pygame.display.set_caption("Criando Jogos")
 
+# Modifica a taxa de atualização de pixels/segundo
+relogio = pygame.time.Clock()
+
 while True:
+    relogio.tick(25)
+    
+    # limpar a tela para sempre mostrar a última posição do retangulo
     tela.fill((0,0,0))
     
     # Colocando os eventos no pygame
@@ -35,19 +42,24 @@ while True:
             pygame.quit()
             exit()
             
-        if event.type == KEYDOWN:
-            if event.key == K_UP:
-                pos_y_retangulo -= 10
+        # if event.type == KEYDOWN:
+        #     if event.key == K_UP:
+        #         pos_y_retangulo -= 10
+        #     elif event.key == K_DOWN:
+        #         pos_y_retangulo += 10            
+        #     elif event.key == K_LEFT:
+        #         pos_x_retangulo -= 10            
+        #     elif event.key == K_RIGHT:
+        #         pos_x_retangulo += 10
             
-            if event.key == K_DOWN:
-                pos_y_retangulo += 10
-            
-            if event.key == K_LEFT:
-                pos_x_retangulo -= 10
-            
-            if event.key == K_RIGHT:
-                pos_x_retangulo += 10
-            
+    if pygame.key.get_pressed()[K_UP]:
+        pos_y_retangulo -= 10
+    elif pygame.key.get_pressed()[K_DOWN]:
+        pos_y_retangulo += 10            
+    elif pygame.key.get_pressed()[K_LEFT]:
+        pos_x_retangulo -= 10            
+    elif pygame.key.get_pressed()[K_RIGHT]:
+        pos_x_retangulo += 10
         
     
     pygame.draw.rect(tela, (0,0,255), (pos_x_retangulo,pos_y_retangulo,largura_retangulo, altura_retangulo))
